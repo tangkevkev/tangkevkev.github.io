@@ -1,104 +1,134 @@
 <!DOCTYPE html>
-<html>
-<title>Personal Homepage</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<html lang="en">
 <link rel="stylesheet" href="index.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kevin Tang – Resume</title>
 
-<style>
-    html,
-    body,
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-        font-family: "Roboto", sans-serif
-    }
-</style>
-
+</head>
 <body>
-    <div class="container">
-        <div class="row padding-top">
-            <div class="col"> </div>
-            <div class="col center ">
-                <h1>Projects</h1>
+
+<header>
+    <h1>Kevin Tang</h1>
+    <p>MSc Computer Science, ETH Zurich</p>
+    <p>Software Engineer</p>
+    <p>
+        <a href="https://www.linkedin.com/in/tang-kev" target="_blank">
+            <i class="fab fa-linkedin"></i> LinkedIn
+        </a> ·
+        <a href="https://github.com/tangkevkev" target="_blank">
+            <i class="fab fa-github"></i> Github
+        </a> ·
+        kevin.tang (at) gmx.ch
+    </p>
+</header>
+
+<main>
+    <!-- Projects Section -->
+    <section>
+        <h2>Projects</h2>
+        <div class="projects">
+            <!-- Project 1 -->
+            <div class="project">
+                <a href="https://altsquare.ch/demo">
+                    <img src="img/altsquare.webp" alt="altsquare project preview">
+                </a>
+                <div class="project-content">
+                    <div class="project-title">Altsquare</div>
+                    <p>Platform for urban planning at altsquare.ch, including automated city-wide open space analysis and interactive web visualization, enabling data-driven decision making for sustainable urban development.</p>
+                    <div class="tech-stack">
+                        <span class="tag">GIS</span>
+                        <span class="tag">Spatial Analysis</span>
+                    </div>
+                </div>
             </div>
-            <div class="col">
-                <p></p>
+            <!-- Project 2 -->
+            <div class="project">
+                <a href="https://guidify.ch">
+                    <img src="img/guidify.webp" alt="guidify project preview">
+                </a>
+                <div class="project-content">
+                    <div class="project-title">Guidify</div>
+                    <p>SaaS platform at guidify.ch for museums and tour operators to create and publish digital guiding materials.</p>
+                    <div class="tech-stack">
+                        <span class="tag">SaaS</span>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="row padding-top">
-            <div class="card bg-light  center-row">
-                <img class="card-img-top center-image" src="img/qr.png" alt="Card image">
-                <div class="card-body">
-                    <h4 class="card-title">QR-Code Editor</h4>
-                    <p class="card-text">Editor to create customized QR-Codes (in Progress).</p>
-                    <br/>
-                    <div class="card-skills">
-                        <a href="https://reactjs.org/" target="_blank">React</a>
-                        <a href="https://mui.com/" target="_blank">MUI</a>
-                        <a href="https://www.typescriptlang.org/" target="_blank">Typescript</a>
-                        <a href="https://html.spec.whatwg.org/multipage/" target="_blank">HTML</a>
-                        <a href="https://www.w3.org/TR/CSS/#css" target="_blank">CSS</a>
-                    </div>
-                    <a href="https://tangkevkev.github.io/qrcode-editor/" target="_blank" class="btn btn-primary">Demo</a>
-                    <a href="https://github.com/tangkevkev/qrcode-editor/" target="_blank" class="btn btn-primary">Source code</a>
+    </section>
 
+    <!-- Experience Section -->
+    <section>
+        <h2>Experience</h2>
+        <ul>
+            <li>
+                <div class="job-title">Software Engineer</div>
+                <div class="job-company">Inventage AG · Full-time</div>
+                <div class="job-time">Mar 2022 – Present · Zurich, Switzerland</div>
+                <p>Developing cloud-native Java applications for a <a href="https://www.gartner.com/en/information-technology/glossary/portal">portal</a> solution running on Kubernetes clusters. Contributing to the platform's security architecture with focus on web security and OIDC-based authentication.</p>
+
+                <p>Keycloak consultant and developer. Conducting web security reviews and legacy IAM solutions to Keycloak migration. Assisting in integrating Keycloak as IAM within new system architectures.</p>
+                <div class="tech-stack">
+                    <span class="tag">Quarkus</span>
+                    <span class="tag">Kubernetes</span>
+                    <span class="tag">Docker</span>
+                    <span class="tag">Java</span>
+                    <span class="tag">Keycloak</span>
+                    <span class="tag">OpenID Connect</span>
+                    <span class="tag">SAML</span>
+                    <span class="tag">Testcontainers</span>
+                    <span class="tag">Playwright</span>
                 </div>
-            </div>
-            <div class="card bg-light center-row">
-                <img class="card-img-top center-image" src="img/graph.png" alt="Card image">
-                <div class="card-body">
-                    <h4 class="card-title">Interactive Graph Library</h4>
-                    <p class="card-text">Simple and customizable Angular components to display & manage graphs. </p>
-                    <br/>
-                    <div class="card-skills">
-                        <a href="https://angular.io/" target="_blank">Angular</a>
-                        <a href="https://www.typescriptlang.org/" target="_blank">Typescript</a>
-                        <a href="https://html.spec.whatwg.org/multipage/" target="_blank">HTML</a>
-                        <a href="https://www.w3.org/TR/CSS/#css" target="_blank">CSS</a>
-                    </div>
-                    <a href="https://tangkevkev.github.io/demoInteractiveGraph/" target="_blank" class="btn btn-primary">Demo</a>
-                    <a href="https://github.com/tangkevkev/demoInteractiveGraph" target="_blank" class="btn btn-primary">Source code</a>
-                    <a href="https://www.npmjs.com/package/interactive-graph" target="_blank" class="btn btn-primary">npm</a>
+            </li>
+            <li>
+                <div class="job-title">Co-Founder & Software Engineer</div>
+                <div class="job-company">Altsquare GmbH · Zurich, Switzerland</div>
+                <div class="job-time">Jan 2024 – Present</div>
+                <p>Building GIS platform for municipal open space analysis. Leading technical development including geospatial processing algorithms and web-based visualization tool.</p>
+                <div class="tech-stack">
+                    <span class="tag">GIS</span>
+                    <span class="tag">Spatial Analysis</span>
                 </div>
-            </div>
+            </li>
+            <li>
+                <div class="job-title">Teaching Assistant</div>
+                <div class="job-company">ETH Zurich & University of Zurich</div>
+                <div class="job-time">Sept 2016 – Jan 2022</div>
+                <p>University of Zurich: Web and Mobile Accessibility course under Prof. Alireza Darvishy, focusing on accessibility implementation for web and mobile applications.</p>
+                <p>ETH Zurich: Introductory Java programming course for first-year students</p>
+                <div class="tech-stack">
 
-            <div class="card bg-light center-row">
-                <img class="card-img-top center-image" src="img/wiewowas.png" alt="Card image">
-                <div class="card-body">
-                    <h4 class="card-title">Wie Wo Was</h4>
-                    <p class="card-text">A location-based chat application. The app aims to enable people to get in touch with others around them easily.</p>
-                    <div class="card-skills">
-                        <a href="https://www.android.com/" target="_blank">Android</a>
-                        <a href="https://www.java.com/de/" target="_blank">Java</a>
-                        <a href="" target="_blank">SQL</a>
-                    </div>
-                    <a href="https://github.com/tangkevkev/wiewowas" target="_blank" class="btn btn-primary">Source code</a>
-
+                    <span class="tag">Web Accessibility</span>
+                    <span class="tag">Mobile Accessibility</span>
+                    <span class="tag">Java</span>
+                    <span class="tag">Kotlin</span>
+                    <span class="tag">Swift</span>
+                    <span class="tag">SwiftUI</span>
+                    <span class="tag">Android</span>
+                    <span class="tag">iOS</span>
                 </div>
-            </div>
+            </li>
+        </ul>
+    </section>
 
-
-
-
+    <!-- Skills Section -->
+    <section>
+        <h2>Languages</h2>
+        <div class="tech-stack">
+            <span class="tag">Swiss German</span>
+            <span class="tag">German</span>
+            <span class="tag">French</span>
+            <span class="tag">English</span>
         </div>
+    </section>
+</main>
 
-
-    </div>
-
-    <div class="footer">
-        <p>©2022 Kevin Tang ||
-            <a href="https://linkedin.com/in/tang-kev" target="_blank">LinkedIn</a> ||
-            <a href="https://github.com/tangkevkev/" target="_blank">GitHub</a>
-        </p>
-    </div>
-    </div>
+<footer>
+    © 2025 Kevin Tang
+</footer>
 
 </body>
-
 </html>
